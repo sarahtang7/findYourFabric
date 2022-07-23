@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'fabric.js') }}"></script>
+
+<script>
+    let fabrics = {{fabrics|tojson}} 
+    console.log(fabrics)
+</script>
+
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 homepic">
+            <img src="https://images.pexels.com/photos/1937336/pexels-photo-1937336.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="up-close detail image of fabrics" class="img-fluid">
+        </div>
+        <div class="col-md-4 description">
+            Find Your Fabric is the perfect site to learn all about different fabrics, where to get them, and how to use them!
+            <br><br>Whether you are a designer, a seamstress, or a fashion connoisseur, use this site to gain ideas for your next sewing project. 
+        </div>
+    </div>
+
+    <hr id="home-divider">
+    <div class="row intro-pop"><b>Take a look at our most popular fabrics...</b></div>
+    <div class="row popular-images">
+        <div class="col-md-4" id="pop-fabric-1"></div> 
+        <div class="col-md-4" id="pop-fabric-2"></div> 
+        <div class="col-md-4" id="pop-fabric-3"></div> 
+    </div>
+
+    <div class="row popular-names">
+        <div class="col-md-4" id="top_fabric1"></div>
+        <div class="col-md-4" id="top_fabric2"></div>
+        <div class="col-md-4" id="top_fabric3"></div>
+    </div>
+
+    <div class="row popular-blurbs">
+        <div class="col-md-4" id="blurb-fabric-1"></div>
+        <div class="col-md-4" id="blurb-fabric-2"></div>
+        <div class="col-md-4" id="blurb-fabric-3"></div>
+    </div>
+    <br><br>
+
+</div>
+
+{% endblock %}

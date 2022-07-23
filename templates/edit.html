@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'edititem.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'viewinfo.js') }}"></script>
+
+<script>
+    let fabrics = {{ fabrics|tojson }} 
+    console.log(fabrics);
+</script>
+
+<div id="edit-header">Edit the data:</div>
+
+<label for="editfname">Fabric name:</label>
+<input type="text" id="editfname">
+<span id="err-name">Must enter image URL</span><br>
+
+<label for="editimg-url">Image URL:</label>
+<input type="url" id="editimg-url">
+<span id="err-img">Must enter image URL</span><br>
+
+<label for="editfab-desc">Description of fabric:</label><br>
+<textarea id="editfab-desc"></textarea>
+<span id="err-desc">Must enter description of fabric</span><br>
+
+<label for="editavg-price">Average price-per-yard: $</label>
+<input type="text" id="editavg-price"></input>
+<span id="err-price">Must enter average price-per-yard as number</span><br>
+
+<label for="editbuy-site">Site to purchase the fabric:</label>
+<input type="url" id="editbuy-site"></input>
+<span id="err-buy">Must enter website to buy fabric from</span><br>
+
+<label for="editcomm-clothes">Clothing to make with the fabric:</label>
+<input type="text" id="editcomm-clothes" placeholder="Eg: Summer Dress, Skirt, Blouse"></input>
+<span id="err-comm">Must enter clothing to be made with the fabric</span><br>
+
+<label for="editsew-tips">Sewing tips for the fabric:</label><br>
+<textarea id="editsew-tips"></textarea>
+<span id="err-tips">Must enter sewing tips</span><br>
+
+<label for="editsim-fabs">Similar fabrics:</label>
+<input type="text" id="editsim-fabs" placeholder="Eg: Crepe, Sateen, Chiffon"></input>
+<span id="err-sim">Must enter similar fabric(s)</span><br>
+
+<br>
+<div id="editpg-buttons">
+    <button type="submit" id="subedit-button">Submit Edits</button>
+    <button type="submit" id="discard-button">Discard Changes</button>
+</div>
+<br>
+<div id="dialog-1" title="Are you sure?">
+    <button id="yessure">Yes</button>
+    <button id="notsure">No</button>
+</div>
+<br>
+
+{% endblock %}

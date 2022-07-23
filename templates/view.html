@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'fabric.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'viewinfo.js') }}"></script>
+
+<script>
+    let fabrics = {{ fabrics|tojson }} 
+    console.log(fabrics);
+</script>
+
+<div id="name-of-fabric"></div>
+<span id="fabric-image"></span>
+<span id="inline-shop">
+    <span id="price-per-yard"><br><u>Price-per-yard</u>: </span>
+    <span id="purchase-site"><br><u>Place to purchase</u>: </span>  
+</span>
+<div id="fabric-summary"></div>
+<hr>
+<div id="common-clothing"><u>Common clothing</u>: </div><br>
+<div id="sewing-tips"><u>Sewing tips</u>: </div><br>
+<div id="sim-fabrics"><u>Similar fabrics</u>: </div>
+
+<button type="submit" id="edit-button">Edit</button><br><br>
+
+{% endblock %}

@@ -1,0 +1,196 @@
+body {
+    background-color: #d3b8b1;
+}
+
+#search-bar {
+    margin-left: 400px;
+}
+
+#name-of-fabric {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#fabric-image {
+    width: 20px;
+    height: auto;
+}
+
+#fabric-summary, #searchres {
+    margin-top: 10px;
+}
+
+#price-per-yard, #purchase-site {
+    font-size: smaller;
+}
+
+#inline-shop {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#searchres {
+    font-weight: bold;
+    font-size: large;
+}
+
+.choices {
+    cursor: pointer;
+    color:rgb(102, 101, 101);
+}
+
+#navbar-design {
+    height: 60px;
+}
+
+.standout {
+    color: black;
+}
+
+.navbar-brand{
+    font-family: Snell Roundhand, cursive;
+    font-size: 30px;
+}
+
+.homepic {
+    max-width: 100%;
+    padding-left: 0px;
+}
+
+.description {
+    text-align: center;
+    margin-top: 30px;
+    border: solid #c2a05c 3px;
+    margin-top: 0px;
+    padding-top: 150px;
+    font-weight: bold;
+}
+
+#pop-fabric-1, #pop-fabric-2, #pop-fabric-3 {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#top_fabric1, #top_fabric2, #top_fabric3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.popular-images {
+    margin-top: 10px;
+}
+
+.intro-pop {
+    margin-top: -5px;
+    margin-left: 4px;
+}
+
+#home-divider {
+    margin-top: 20px;
+    height: 2px;
+    color: #c2a05c;
+    background-color: #c2a05c;
+}
+
+#blurb-fabric-1, #blurb-fabric-2, #blurb-fabric-3 {
+    font-size: smaller;
+    line-height: 120%;
+}
+
+.search-sums {
+    font-size: small;
+    line-height: 50%;
+}
+
+#reslength {
+    font-size: 15px;
+    margin-top: -5px;
+    color: rgb(110, 110, 110);
+    margin-bottom: 15px;
+}
+
+#add-nav {
+    margin-left: 100px;
+}
+
+#add-header, #edit-header {
+    font-weight: bold;
+    font-size: large;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+#img-url, #buy-site, #editimg-url, #editbuy-site {
+    width: 500px;
+}
+
+#fab-desc, #editfab-desc {
+    width: 400px;
+    height: 220px;
+    margin-left: 150px;    
+    margin-top: -26px;
+}
+
+#comm-clothes, #sim-fabs, #editcomm-clothes, #editsim-fabs {
+    width: 300px;
+}
+
+::placeholder {
+    font-size: 13px;
+}
+
+#sew-tips, #editsew-tips {
+    width: 350px;
+    height: 150px;
+    margin-left: 185px;
+    margin-top: -26px;
+}
+
+#add-button {
+    display: grid;
+    margin: auto;
+    background-color: #d6b97f;
+}
+
+#subedit-button {
+    margin-left: 350px;
+    background-color: #d6b97f;
+}
+
+#discard-button {
+    margin-left: 200px;
+    display: inline-block;
+}
+
+#sim-fabs {
+    margin-bottom: 15px;
+}
+
+#new-item {
+    background-color: #fde5b4;
+}
+
+#err-sim, #err-name, #err-img, #err-desc, #err-price, #err-buy, #err-comm, #err-tips, #err-sim {
+    font-size: small;
+    font-weight: bold;
+    color: red;
+    display: none;
+}
+
+#edit-button {
+    width: 60px;
+    height: auto;
+    margin-top: 40px;
+    font-size: small;
+}
+
+#dialog-1 {
+    background-color:rgb(102, 101, 101);
+}
+
+.searchcomm {
+    cursor: pointer;
+    color: #5183e7;
+}

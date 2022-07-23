@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'additem.js') }}"></script>
+
+<script>
+    let fabrics = {{ fabrics|tojson }} 
+    console.log(fabrics);
+</script>
+
+<div id="success-new"></div>
+<div id="add-header">Add a fabric to our database:</div>
+
+<label for="fname">Fabric name:</label>
+<input type="text" id="fname" placeholder="Eg: Silk" autocomplete="off">
+<span id="err-name">Must enter fabric name</span><br>
+
+<label for="img-url">Image URL:</label>
+<input type="url" id="img-url">
+<span id="err-img">Must enter image URL</span><br>
+
+<label for="fab-desc">Description of fabric:</label><br>
+<textarea id="fab-desc"></textarea>
+<span id="err-desc">Must enter description of fabric</span><br>
+
+<label for="avg-price">Average price-per-yard: $</label>
+<input type="text" id="avg-price"></input>
+<span id="err-price">Must enter average price-per-yard as number</span><br>
+
+<label for="buy-site">Site to purchase the fabric:</label>
+<input type="url" id="buy-site"></input>
+<span id="err-buy">Must enter website to buy fabric from</span><br>
+
+<label for="comm-clothes">Clothing to make with the fabric:</label>
+<input type="text" id="comm-clothes" placeholder="Eg: Summer Dress, Skirt, Blouse"></input>
+<span id="err-comm">Must enter clothing to be made with the fabric</span><br>
+
+<label for="sew-tips">Sewing tips for the fabric:</label><br>
+<textarea id="sew-tips"></textarea>
+<span id="err-tips">Must enter sewing tips</span><br>
+
+<label for="sim-fabs">Similar fabrics:</label>
+<input type="text" id="sim-fabs" placeholder="Eg: Crepe, Sateen, Chiffon"></input>
+<span id="err-sim">Must enter similar fabric(s)</span><br>
+
+<button type="submit" id="add-button">Submit</button><br><br>
+
+{% endblock %}

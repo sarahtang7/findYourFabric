@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'searchres.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'fabric.js') }}"></script>
+
+<script>
+    let fabrics = {{ fabrics|tojson }} 
+    console.log(fabrics);
+    let resultfabs = {{resultfabs|tojson}}
+    console.log(resultfabs);
+    let resultids = {{resultids|tojson}}
+    console.log(resultids);
+    let resultsum = {{resultsum|tojson}}
+    console.log(resultsum);
+    let resultclothes = {{resultclothes|tojson}}
+    console.log(resultclothes);
+</script>
+
+<div id="searchres"></div>
+
+{% endblock %}
